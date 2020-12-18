@@ -17,4 +17,8 @@ struct Stack<T> {
     mutating func pop() -> T? {
         return self.elements.popLast()
     }
+    
+    func peek() -> T? {
+        return self.elements.last
+    }
 }
