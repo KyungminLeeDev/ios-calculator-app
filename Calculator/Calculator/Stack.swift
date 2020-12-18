@@ -13,4 +13,8 @@ struct Stack<T> {
     mutating func push(_ element: T) {
         self.elements.append(element)
     }
+    
+    mutating func pop() -> T? {
+        return self.elements.popLast()
+    }
 }
