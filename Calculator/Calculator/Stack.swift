@@ -10,6 +10,10 @@ import Foundation
 struct Stack<T> {
     private var elements = [T]()
     
+    var count: Int {
+        return self.elements.count
+    }
+    
     mutating func push(_ element: T) {
         self.elements.append(element)
     }
