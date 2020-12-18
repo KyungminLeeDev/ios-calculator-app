@@ -6,3 +6,11 @@
 //
 
 import Foundation
+
+struct Stack<T> {
+    private var elements = [T]()
+    
+    mutating func push(_ element: T) {
+        self.elements.append(element)
+    }
+}
