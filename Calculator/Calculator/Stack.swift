@@ -14,6 +14,10 @@ struct Stack<T> {
         return self.elements.count
     }
     
+    var isEmpty: Bool {
+        return self.elements.isEmpty
+    }
+    
     mutating func push(_ element: T) {
         self.elements.append(element)
     }
